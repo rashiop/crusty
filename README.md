@@ -1,0 +1,2 @@
+# crusty
+learn rust

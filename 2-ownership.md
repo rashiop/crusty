@@ -39,9 +39,27 @@
 
 ## Loop
 1. Loop {}
-2. For ... in [].iter() {}
-3. While ... {}
-4. For ... in 0..4 {}
+    - return value
+    - label
+    ```
+        let value = loop {}
+
+        'outer_loop': loop {
+            'inner_loop': loop {
+                if condition1 {
+                    break;
+                }
+
+                if condition2 {
+                    break 'outer_loop';
+                }
+            }
+        }
+    ```
+2. While ... {}
+3. Inside collection
+    - For ... in [] {}
+    - For ... in 0..4 {}
 
 ## 1. Ownership rules
 1. Each value in Rust has a value that's called its owner

@@ -45,7 +45,7 @@ fn loop_flow() {
     println!("Result 2: {result}");
 
     let nicks = ["Pupu", "Sammy", "Samudra", "Samucil", "Alpupu", "Pupucino", "Baby", "Sweety", "Cutie"];
-    for nick in nicks.iter() {
+    for nick in nicks {
         println!("Udra is also known as {nick}");
     }
 

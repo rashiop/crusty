@@ -41,6 +41,7 @@ Cargo:
 - Build result in the:
   - default `target/debug`
   - --release `target/release`
+- `cargo update` ignore Cargo.lock and install [^semver]
 ```
 $ cargo new <project_name>
 $ cd <project_name>
@@ -59,4 +60,10 @@ Structure
 |  |_ src
 |     |_ main.rs
 |-- Cargo.toml # eq package.json
+|-- Cargo.lock # artifacts version
 ```
+
+VScode setup
+- rust-analyzer
+- event better toml
+- cargo

@@ -15,7 +15,17 @@ enum Coin {
 
 fn main() {
     let cents = value_in_cents(Coin::Quarter(UsState::Alaska));
-    println!("cents: {}", cents)
+    println!("cents: {}", cents);
+
+    let dice_roll = 9;
+    match dice_roll {
+        3 => add_fancy_hat(),
+        7 => remove_fancy_hat(),
+        // match all
+        // _ => reroll(),
+        // ignore everything else
+        _ => ()
+    }
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
@@ -29,3 +39,7 @@ fn value_in_cents(coin: Coin) -> u8 {
         }
     }
 }
+
+fn add_fancy_hat() {}
+fn remove_fancy_hat() {}
+// fn reroll() {}

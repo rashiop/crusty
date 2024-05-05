@@ -1,9 +1,7 @@
-workspace = { members = ["restaurant"] }
 [package]
-name = "packages_crates_module"
+name = "restaurant"
 version = "0.1.0"
 edition = "2021"
-authors = ["poppy"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

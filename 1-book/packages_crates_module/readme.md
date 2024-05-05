@@ -3,6 +3,7 @@
 Several constructs to help structure code:
 
 - **Packages:** A Cargo feature that lets you build, test, and share crates.
+    - cargo run: create a package
 - **Crates:** A tree of modules that produces a library or executable.
 - **Modules and `use`:** Helps to control the organization, scope, and privacy of paths.
 - **Paths:** A way of naming an item, such as a struct, function, or module.
@@ -19,6 +20,11 @@ Key Points:
 - **Packages and Crates:**
   - A package has a `Cargo.toml` that describes how to build one or more crates.
   - A crate can be a binary or a library (or both).
+- **Create a new lib**
+    ```
+      // on cli
+      cargo new --lib restaurant
+    ```
 - **Defining Modules:**
   - Use `mod` keyword to define a module.
   - Example: `mod front_of_house { ... }`
@@ -41,7 +47,6 @@ Key Points:
 ### Comparison Code with JavaScript
 
 **Rust Code:**
-
 ```rust
 // lib.rs
 pub mod front_of_house {

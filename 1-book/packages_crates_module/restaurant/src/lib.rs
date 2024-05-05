@@ -15,3 +15,13 @@ pub mod customer_experience {
         front_of_house::hosting::add_to_waitlist();
     }
 }
+
+fn deliver_order() {}
+pub mod back_of_house {
+    pub fn fix_incorrect_order() {
+        cook_order();
+        super::deliver_order();
+    }
+
+    fn cook_order() {}
+}

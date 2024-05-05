@@ -26,6 +26,13 @@ fn main() {
         // ignore everything else
         _ => ()
     }
+
+
+    let five = Some(5);
+    let six = plus_one(five);
+    let none = plus_one(None);
+
+    println!("six: {:?} none: {:?}", six, none);
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
@@ -43,3 +50,11 @@ fn value_in_cents(coin: Coin) -> u8 {
 fn add_fancy_hat() {}
 fn remove_fancy_hat() {}
 // fn reroll() {}
+
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1)
+    }
+}

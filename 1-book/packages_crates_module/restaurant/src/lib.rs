@@ -4,15 +4,13 @@ pub mod front_of_house {
     }
 }
 
-// bring paths into scope
-// shorter path name
-// hosting now defined in crate root
-use crate::front_of_house::hosting;
 
-// use no longer applies on customer
-// caused error
 
 mod customer {
+    // move to add to scope
+    use crate::front_of_house::hosting;
+    use crate::back_of_house;
+
 
     pub fn eat_at_restaurant() {
         // Without use

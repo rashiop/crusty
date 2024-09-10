@@ -1,4 +1,5 @@
 # crusty
+See the respective branch for detail -> [book](https://github.com/rashiop/crusty/tree/1-rust-book)
 
 ## Learning roadmap
 
